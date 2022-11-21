@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useAppSelector } from '../../hooks/hooks';
 
-import { Title } from '../';
+import { Title, Map } from '../';
 import s from './JobContacts.module.css';
 
 const JobContacts: React.FunctionComponent = () => {
@@ -36,7 +36,7 @@ const JobContacts: React.FunctionComponent = () => {
             </address>
           </div>
 
-          <div className={s.map}>Map</div>
+          <Map />
         </div>
       </div>
     </section>

@@ -1,0 +1,34 @@
+.list__date {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  /* font */
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.21px;
+}
+
+.job__date {
+  color: rgba(56, 65, 93, 0.6);
+  /* font */
+  font-size: 13px;
+  line-height: 1.92;
+  letter-spacing: 0.19px;
+}
+
+@media screen and (min-width: 1440px) {
+  .list__date {
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.24px;
+  }
+
+  .job__date {
+    order: 1;
+    color: rgba(56, 65, 93, 0.355988);
+    /* font */
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.56px;
+  }
+}

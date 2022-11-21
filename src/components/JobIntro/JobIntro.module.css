@@ -1,0 +1,54 @@
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  row-gap: 5px;
+}
+.job__title {
+  flex-basis: 100%;
+  /* font */
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+}
+
+.salary__text {
+  /* font */
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.56px;
+}
+
+.salary__number {
+  /* font */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -0.63px;
+}
+
+@media screen and (max-width: 1440px) {
+  .salary {
+    text-align: end;
+  }
+
+  .salary__text {
+    color: rgba(56, 65, 93, 0.82);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .job {
+    align-items: flex-start;
+    margin-bottom: 7px;
+    row-gap: 7px;
+  }
+
+  .job__title {
+    flex-basis: 500px;
+    margin-right: 60px;
+    flex-grow: 1;
+  }
+}

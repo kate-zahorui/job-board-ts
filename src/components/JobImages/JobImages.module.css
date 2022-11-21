@@ -1,0 +1,28 @@
+.section {
+  margin-bottom: 63px;
+}
+
+.list {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.image {
+  border-radius: 8px;
+}

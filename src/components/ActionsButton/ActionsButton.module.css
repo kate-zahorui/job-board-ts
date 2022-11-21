@@ -1,0 +1,77 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  scale: 1;
+  /* color */
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  /* font */
+  line-height: 1.44;
+  letter-spacing: -0.5px;
+  /* animation */
+  transition: transform var(--anim-props);
+}
+
+.btn:not(:last-child) {
+  margin-right: 36px;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.02);
+}
+
+.save,
+.share {
+  composes: btn;
+}
+
+.save::before,
+.share::before {
+  content: ' ';
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 12px;
+  /* color */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.save::before {
+  width: 18px;
+  height: 20px;
+
+  background-image: url('../../images/save-star.svg');
+}
+
+.share::before {
+  width: 19px;
+  height: 20px;
+
+  background-image: url('../../images/share.svg');
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.56px;
+  }
+
+  .btn:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .save::before {
+    margin-right: 15px;
+    background-image: url('../../images/save-bookmark.svg');
+  }
+
+  .share::before {
+    margin-right: 15px;
+  }
+}

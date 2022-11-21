@@ -1,13 +1,75 @@
+@import 'modern-normalize/modern-normalize.css';
+
+:root {
+  --text-main-color: #878d9d;
+  --text-secondary-color: #3a4562;
+  --text-opacity-color: rgba(56, 65, 93, 0.82);
+  --bg-main-color: #e6e9f2;
+  --bg-secondary-color: #eff0f5;
+
+  --button-bg-color: #384564;
+  --contacts-bg-color: #2a3047;
+  --contacts-text-color: #e7eaf0;
+
+  /* #3a4562 + opacity: 0.13 = rgba(56, 69, 100, 0.13) */
+  --decor-line: 1px solid rgba(56, 69, 100, 0.13);
+
+  --anim-props: 250ms ease-out;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-main-color);
+  /* letter-spacing: 0.2px; */
+
+  /* font */
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.24px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
 }

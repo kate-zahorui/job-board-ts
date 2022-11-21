@@ -1,0 +1,70 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+  border-radius: 8px;
+  /* color */
+  background: #f9fafd;
+  color: rgba(56, 65, 93, 0.602109);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  /* font */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 1.3px;
+}
+
+.page {
+  padding: 8px;
+  border-bottom: 2px solid transparent;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  color: #55699e;
+  border-bottom: 2px solid #55699e;
+}
+
+.previousPage,
+.nextPage {
+  flex-grow: 1;
+  padding: 8px 18px;
+  color: rgba(58, 69, 98, 0.5);
+  /* animation */
+  transition: color var(--anim-props);
+}
+
+.nextPage {
+  text-align: end;
+}
+
+.previousPage:hover,
+.previousPage:focus,
+.nextPage:hover,
+.nextPage:focus {
+  color: #55699e;
+}
+
+.icon {
+  fill: currentColor;
+  --color2: transparent;
+}
+
+@media screen and (min-width: 1440px) {
+  .pagination {
+    max-width: 515px;
+    margin: 26px auto 0;
+    color: #70778b;
+    /* font */
+    font-size: 20.8px;
+    line-height: 1.2;
+    letter-spacing: 1.7px;
+  }
+}

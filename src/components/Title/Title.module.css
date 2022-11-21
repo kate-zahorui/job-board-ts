@@ -1,0 +1,10 @@
+.title {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  /* color */
+  border-bottom: var(--decor-line);
+  /* font */
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: 0.41px;
+}
